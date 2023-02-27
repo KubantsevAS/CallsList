@@ -1,14 +1,13 @@
 import './App.css';
 import React from 'react';
 import Menu from './components/Menu/Menu';
-import CallsContainer from './components/Calls/CallsContainer';
-
+import CallsSection from './components/CallsSection/CallsSection';
 
 function App() {
   return (
     <div className="App">
       <Menu/>
-      <CallsContainer/>
+      <CallsSection/>
     </div>
   );
 }

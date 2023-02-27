@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from './Menu.module.css'
+import {ItogiSvg, ZakazySvg, SoobscheniaSvg, ZvonkiSvg, KontrSvg, DocumentSvg, IspolnitelSvg, OtchetSvg, BazaZnaniySvg, SettingsSvg} from './../../images/SvgCollector'
 
 export default function Menu() {
 
-    const createLink = (name, style) => {
+    const createLink = (name, svg, style) => {
         return (
             <div className={styles.link + ' ' + style}>
-                {name}
+                <span className={styles.svg}>{svg}</span><span>{name}</span>
             </div>
     )}
 
@@ -18,16 +19,16 @@ export default function Menu() {
                 </svg>
             </div>
             <div className={styles.links}>
-                {createLink('Итоги')}
-                {createLink('Заказы')}
-                {createLink('Сообщения')}
-                {createLink('Звонки')}
-                {createLink('Контрагенты')}
-                {createLink('Документы')}
-                {createLink('Исполнители')}
-                {createLink('Отчёты')}
-                {createLink('База знаний')}
-                {createLink('Настройки')}
+                {createLink('Итоги', ItogiSvg())}
+                {createLink('Заказы', ZakazySvg())}
+                {createLink('Сообщения', SoobscheniaSvg())}
+                {createLink('Звонки', ZvonkiSvg())}
+                {createLink('Контрагенты', KontrSvg())}
+                {createLink('Документы', DocumentSvg())}
+                {createLink('Исполнители', IspolnitelSvg())}
+                {createLink('Отчёты', OtchetSvg())}
+                {createLink('База знаний', BazaZnaniySvg())}
+                {createLink('Настройки', SettingsSvg())}
             </div>
         </div>
     )
