@@ -1,0 +1,8 @@
+.callElem {
+    margin-left: 40px;
+    height: 65px;
+    border-top: 1px solid #EAF0FA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
