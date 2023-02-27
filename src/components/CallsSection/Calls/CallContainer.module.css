@@ -1,3 +1,12 @@
 .container {
     margin: 0 120px;
 }
+
+.elementsField {
+    background-color: white;
+    color: #122945;
+    font-size: 15px;
+    box-shadow: 0px 4px 5px #E9EDF3;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}

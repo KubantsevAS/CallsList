@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.inputField {
+    width: 35%;
+    height: 48px;
+    box-sizing: border-box;
+    padding-left: 28px;
+    background: none;
+    border: 0;
+}
+
+
+.filters {
+    height: 21px;
+    font-size: 14px;
+    display: flex;
+}
+
+.filterOption{
+    color: #5E7793;
+    opacity: 0.87;
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+}
+
+
+.filterOption:last-child {
+    margin-right: 0;
+}
+
+.arrow {
+    opacity: 1;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

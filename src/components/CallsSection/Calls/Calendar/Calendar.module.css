@@ -1,0 +1,78 @@
+.calendarContainer {
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.balanceBtn {
+    width: 145px;
+    height: 40px;
+    border-radius: 48px;
+    background-color: white;
+    color: #899CB1;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    box-sizing: border-box;
+    margin-right: 48px;
+    cursor: pointer;
+}
+
+.balanceBtn span {
+    color: #122945;
+    font-weight: 500;
+}
+
+.balanceBtn svg {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.balanceBtn:hover span {
+    color: #0024CB;
+}
+
+.balanceBtn:hover svg path {
+    fill: #0024CB;
+}
+
+.balanceBtn:active span {
+    color: #122945;
+}
+
+.balanceBtn:active svg path {
+    fill: #274BC8;
+}
+
+/*=============SELECTOR=============*/
+.selector {
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+
+.days {
+    margin: 0 12px;
+    display: flex;
+    align-items: center;
+    color: #005FF8;
+    cursor: pointer;
+}
+
+.days svg {
+    margin-right: 8px;
+}
+
+.arrow {
+    cursor: pointer;
+    width: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    justify-content: flex-end;
+}

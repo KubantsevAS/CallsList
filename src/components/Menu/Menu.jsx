@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './Menu.module.css'
-import {ItogiSvg, ZakazySvg, SoobscheniaSvg, ZvonkiSvg, KontrSvg, DocumentSvg, IspolnitelSvg, OtchetSvg, BazaZnaniySvg, SettingsSvg} from './../../images/SvgCollector'
+import {ItogiSvg, ZakazySvg, SoobscheniaSvg, ZvonkiSvg, 
+    KontrSvg, DocumentSvg, IspolnitelSvg, OtchetSvg, 
+    BazaZnaniySvg, SettingsSvg} from './../../images/SvgCollectorMenu'
 
 export default function Menu() {
 
@@ -22,7 +24,7 @@ export default function Menu() {
                 {createLink('Итоги', ItogiSvg())}
                 {createLink('Заказы', ZakazySvg())}
                 {createLink('Сообщения', SoobscheniaSvg())}
-                {createLink('Звонки', ZvonkiSvg())}
+                {createLink('Звонки', ZvonkiSvg(), styles.active)}
                 {createLink('Контрагенты', KontrSvg())}
                 {createLink('Документы', DocumentSvg())}
                 {createLink('Исполнители', IspolnitelSvg())}

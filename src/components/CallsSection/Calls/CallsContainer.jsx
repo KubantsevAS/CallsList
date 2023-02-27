@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { getCallsData } from '../../../api/api';
+import Calendar from './Calendar/Calendar';
 import styles from './CallContainer.module.css'
 import CallElem from './CallElem/CallElem';
+import SearchAndFilters from './SearchAndFilters/SearchAndFilters';
 
 const CallsContainer = () => {
 
@@ -9,7 +11,7 @@ const CallsContainer = () => {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        async function fetchData(){
+        async function fetchData() {
             const request = await getCallsData();
             setCalls(request.data.results);
             setLoading(true);
@@ -20,11 +22,17 @@ const CallsContainer = () => {
 
     return (
         <div className={styles.container}>
-            {loading &&
-            calls.map(cal => <CallElem {...cal} key={cal.id}/>)}
+            <Calendar />
+            <SearchAndFilters/>
+            <div className={styles.elementsField}>
+                <div></div>
+                {loading &&
+                    calls.map(cal => <CallElem {...cal} key={cal.id} />)}
+            </div>
         </div>
     );
 }
 
 
 export default CallsContainer;
+
