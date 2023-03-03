@@ -6,3 +6,47 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.callElem span {
+    margin: 0 10px;
+}
+.callElem span:last-child {
+    margin-right: 40px;
+}
+
+.callTime {
+    width: 41px;
+}
+
+.avatar {
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar img {
+    width: 32px;
+    height: 32px;
+}
+
+.partnerInfo {
+    width: 254px;
+}
+
+.source {
+    width: 200px;
+}
+
+.mark {
+    width: 150px;
+}
+
+.record {
+    width: 352px;
+    text-align: end;
+}
+
+.incomeSvg svg path {
+    fill: #EA1A4F;
+}
